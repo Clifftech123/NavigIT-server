@@ -1,0 +1,1 @@
+const config : string = "Welcome to the config section of the project"

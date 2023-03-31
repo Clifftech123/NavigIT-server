@@ -1,0 +1,1 @@
+const service : string = "Welcome to the service section of the project"

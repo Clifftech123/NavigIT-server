@@ -1,0 +1,1 @@
+const utile : string = "Welcome to the utils section of the project"
