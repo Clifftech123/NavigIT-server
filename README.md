@@ -18,6 +18,18 @@ This repository contains the backend code for a student platform built with Nest
 - Pagination: The platform supports pagination to handle a large number of posts efficiently.
 
 
+# Features  Student  Dashboard
+
+The student dashboard provides an overview of the student's activities and information. It offers a personalized space where students can view and manage their account details, track their posts and comments, and access relevant information. Here are some features you can include in the student dashboard:
+
+- Account Information: Display the student's profile picture, name, email address, and any other relevant information.
+- Activity Summary: Provide a summary of the student's recent activities, such as the number of posts created, comments made, or likes received.
+- Personalized Feed: Show a feed of the student's posts, comments, and interactions with other students' posts.
+- Notifications: Notify the student about new comments, likes, or other relevant updates.
+- Edit Profile: Allow students to update their profile information, including their profile picture, name, or any additional details.
+- Change Password: Provide an option for students to change their account password.
+- Logout: Enable students to securely log out of their account.
+
 ## Tech Stack
 
 The backend of this project is built using the following technologies and frameworks:
