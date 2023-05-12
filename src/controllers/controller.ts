@@ -1,1 +1,0 @@
-const controller: string  = "Welcome to the controller section of the project"

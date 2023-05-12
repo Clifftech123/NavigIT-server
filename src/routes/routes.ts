@@ -1,1 +1,0 @@
-const routes: string = "Welcome  the routes section of the project "
