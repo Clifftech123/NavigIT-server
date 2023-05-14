@@ -98,6 +98,7 @@ The following API endpoints are available:
 - `POST /auth/login`: Logs in an existing user.
 - `GET /auth/google`: Redirects the user to the Google OAuth page.
 - `GET /auth/google/callback`: Handles the Google OAuth callback.
+- `GET /users/:id/dashboard`: Returns the student dashboard for the specified user.
 - `GET /posts`: Returns a list of posts.
 - `GET /posts/:id`: Returns a single post.
 - `POST /posts`: Creates a new post.
