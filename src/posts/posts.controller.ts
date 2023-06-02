@@ -10,6 +10,8 @@ import {
   Query,
   Put,
   Delete,
+  UsePipes,
+  ValidationPipe,
 } from '@nestjs/common';
 import { PostsService } from './posts.service';
 import { CreatePostDTO } from './dto/post.dto';
@@ -36,6 +38,7 @@ export class PostsController {
 
   // Add a new post to the database
   @Post('/post')
+  @UsePipes(new ValidationPipe())
   async addPost(@Res() res, @Body() createPostDTO: CreatePostDTO) {
     const newPost = await this.postService.addPost(createPostDTO);
     return res.status(HttpStatus.OK).json({
@@ -46,6 +49,7 @@ export class PostsController {
 
   // Edit an existing post by ID in the database
   @Put('/edit')
+  @UsePipes(new ValidationPipe())
   async editPost(
     @Res() res,
     @Query('postID', new ValidateObjectId()) postID,
