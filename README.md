@@ -14,11 +14,11 @@ To get started with Student Connect, simply follow these steps:
 
 1. Clone the repository
 ```bash
-https://github.com/Clifftech123/student-connect-server.git
+https://github.com/Clifftech123/student-connect-api.git
 ```
 2. Install the necessary dependencies using 
 `npm install`
-3. Start the application using `npm start`
+3. Start the application using `npm start:dev`
 
 This will start the API server locally, and you can access it at`http://localhost:3000`.
 
