@@ -1,4 +1,4 @@
-I apologize if the documentation I provided resembles a proposal rather than a final project documentation. Allow me to provide you with an updated version that aligns more closely with a final project documentation format:
+
 
 ## Project Documentation: Student Connect
 
