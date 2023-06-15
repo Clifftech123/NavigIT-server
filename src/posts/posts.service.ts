@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-import { Post } from './post.interface';
-import { CreatePostDTO } from './dto/post.dto'; // Import the CreatePostDTO interface
+import { Post } from '../shared/Interfaces/post.interface';
+import { CreatePostDTO } from '../shared/dto/post.dto'; // Import the CreatePostDTO interface
 
 @Injectable()
 export class PostsService {

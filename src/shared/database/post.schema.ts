@@ -1,7 +1,7 @@
 import { Schema } from 'mongoose';
 import { validate } from 'class-validator';
-import { CreatePostDTO } from './dto/post.dto';
-import { Post } from './post.interface';
+import { CreatePostDTO } from '../dto/post.dto';
+import { Post } from '../Interfaces/post.interface';
 
 //    create a schema for the post data
 export const PostSchema = new Schema<Post>({

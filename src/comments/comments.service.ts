@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-import { Comment } from './comment.interface';
-import { CreateCommentDTO } from './dto/comment.dto';
+import { Comment } from '../shared/Interfaces/comment.interface';
+import { CreateCommentDTO } from '../shared/dto/comment.dto';
 
 @Injectable()
 export class CommentsService {

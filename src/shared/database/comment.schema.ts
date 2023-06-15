@@ -1,7 +1,7 @@
 import { Schema } from 'mongoose';
 import { validate } from 'class-validator';
-import { Comment } from './comment.interface';
-import { CreateCommentDTO } from './dto/comment.dto';
+import { Comment } from '../Interfaces/comment.interface';
+import { CreateCommentDTO } from '../dto/comment.dto';
 
 //  create a schema for the comment data
 export const CommentSchema = new Schema<Comment>({

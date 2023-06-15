@@ -8,8 +8,8 @@ import {
   Param,
 } from '@nestjs/common';
 import { CommentsService } from './comments.service';
-import { Comment } from './comment.interface';
-import { CreateCommentDTO } from './dto/comment.dto';
+import { Comment } from '../shared/Interfaces/comment.interface';
+import { CreateCommentDTO } from '../shared/dto/comment.dto';
 
 @Controller('comments')
 export class CommentsController {
