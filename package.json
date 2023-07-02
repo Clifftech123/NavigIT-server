@@ -1,0 +1,61 @@
+{
+  "name": "student-connect-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  " author": {
+    "name": "Isaiah Clifford OPoku",
+    "email": "opokuisaiahclifford@gmail.com",
+    "url": "",
+    "license": "MIT"
+  },
+  "scripts": {
+    "build:compile": "npx babel src --extensions .ts --out-dir build --source-maps",
+    "build:types": "tsc",
+    "prettier": "prettier --write \"src/**/*.ts\"",
+    "prettier:check": "prettier --check \"src/**/*.ts\"",
+    "lint": "eslint --ignore-path .eslintignore \"src/**/*.ts\" --fix",
+    "lint:check": "eslint --ignore-path .eslintignore \"src/**/*.ts\"",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.20.0",
+    "npm": "please-use-yarn"
+  },
+  "keywords": [
+    "student",
+    "connect",
+    "api"
+  ],
+  "devDependencies": {
+    "@babel/cli": "7.22.5",
+    "@babel/core": "7.22.5",
+    "@babel/node": "7.22.5",
+    "@babel/plugin-proposal-class-properties": "7.18.6",
+    "@babel/plugin-transform-runtime": "7.22.5",
+    "@babel/preset-env": "7.22.5",
+    "@babel/preset-typescript": "7.22.5",
+    "@babel/runtime": "7.22.5",
+    "@commitlint/cli": "17.6.6",
+    "@commitlint/config-conventional": "17.6.6",
+    "@types/node": "20.3.3",
+    "@typescript-eslint/eslint-plugin": "5.60.1",
+    "@typescript-eslint/parser": "5.60.1",
+    "babel-core": "6.26.3",
+    "babel-plugin-module-resolver": "5.0.0",
+    "babel-plugin-source-map-support": "2.2.0",
+    "eslint": "8.44.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-config-standard": "17.1.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "prettier": "2.8.8",
+    "typescript": "5.1.6"
+  },
+  "dependencies": {
+    "husky": "8.0.3"
+  }
+}
