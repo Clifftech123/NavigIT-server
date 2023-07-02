@@ -4,8 +4,13 @@ import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import helmet from 'helmet'
 
+
+
 import ErrorMiddleware from './middlewares/error.middleware'
 import HttpException from './utils/exceptions/ http.exception'
+
+
+require('module-alias/register')
 import Controller from './interfaces/controller.interface'
 
 // API constant import
@@ -17,6 +22,8 @@ import ConstantMessage from './constants/message.constant'
 // HTTP constant imports
 import ConstantHttpCode from './constants/http.code.constant'
 import ConstantHttpReason from './constants/http.reason.constant'
+
+
 
 class App {
   public app: Application

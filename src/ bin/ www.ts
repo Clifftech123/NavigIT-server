@@ -1,7 +1,8 @@
 #!/usr/bin/env ts-node
-
+import 'module-alias/register'
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
+
 
 import http from 'http'
 import App from '..'

@@ -10,11 +10,12 @@
   },
   "scripts": {
     "start": "node build/bin/www.js",
-    "clean": "rm -rf build",
-    "build": "yarn clean && concurrently yarn:build:*",
-    "build:compile": "npx babel src --extensions .ts --out-dir build --source-maps",
-    "dev": "concurrently yarn:dev:* --kill-others \"nodemon --exec node build/bin/www.js\"",
-    "dev:compile": "npx babel src --extensions .ts --out-dir build --source-maps --watch",
+    "clean": "rimraf build",
+    "build": "yarn clean && yarn build:compile",
+    "build:compile": "babel src --extensions .ts --out-dir build --source-maps",
+    "dev": "concurrently \"yarn dev:compile\" \"yarn dev:watch\"",
+    "dev:compile": "babel src --extensions .ts --out-dir build --source-maps --watch",
+    "dev:watch": "nodemon --exec node build/bin/www.js",
     "dev:types": "tsc --watch",
     "prettier": "prettier --write \"src/**/*.ts\"",
     "prettier:check": "prettier --check \"src/**/*.ts\"",
@@ -34,9 +35,14 @@
     "cookie-parser": "1.4.6",
     "core-js": "3.31.0",
     "cors": "2.8.5",
+    "dotenv": "16.3.1",
+    "envalid": "7.3.1",
     "express": "4.18.2",
     "helmet": "7.0.0",
-    "regenerator-runtime": "0.13.11"
+    "module-alias": "2.2.3",
+    "nodemo": "1.0.0",
+    "regenerator-runtime": "0.13.11",
+    "winston": "3.9.0"
   },
   "devDependencies": {
     "@babel/cli": "7.22.5",
@@ -52,6 +58,7 @@
     "@types/core-js": "2.5.5",
     "@types/cors": "2.8.13",
     "@types/express": "4.17.17",
+    "@types/module-alias": "2.0.1",
     "@types/node": "20.3.3",
     "@types/regenerator-runtime": "0.13.1",
     "@typescript-eslint/eslint-plugin": "5.60.1",
@@ -69,5 +76,22 @@
     "eslint-plugin-promise": "6.1.1",
     "prettier": "2.8.8",
     "typescript": "5.1.6"
+  },
+  "_moduleAliases": {
+    "@/bin": "build/bin",
+    "@/config": "build/config",
+    "@/constants": "build/constants",
+    "@/controllers": "build/controllers",
+    "@/env": "build/env",
+    "@/interfaces": "build/interfaces",
+    "@/middlewares": "build/middlewares",
+    "@/models": "build/models",
+    "@/repositories": "build/repositories",
+    "@/routers": "build/routers",
+    "@/schemas": "build/schemas",
+    "@/security": "build/security",
+    "@/services": "build/services",
+    "@/utils": "build/utils",
+    "@/validations": "build/validations"
   }
 }
