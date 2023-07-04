@@ -1,13 +1,10 @@
 import { Request, Response, NextFunction } from 'express'
-
 import HttpException from 'utils/exceptions/ http.exception'
-
 //  http constant
 import ConstantHttpCode from 'constants//http.code.constant'
 import ConstantHttpReason from 'constants//http.reason.constant'
 
 // message constant
-
 import ConstantMessage from 'constants//message.constant'
 // Error handling middleware function
 

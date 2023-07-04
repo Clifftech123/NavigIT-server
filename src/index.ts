@@ -4,34 +4,41 @@ import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import helmet from 'helmet'
 
+// Middleware
+import ErrorMiddleware from '@/middlewares/error.middleware'
 
+// Exception
+import HttpException from '@/utils/exceptions/ http.exception'
 
-import ErrorMiddleware from './middlewares/error.middleware'
-import HttpException from './utils/exceptions/ http.exception'
+// Controller
+import Controller from '@/interfaces/controller.interface'
 
+// variable
+import Variable from '@/env/variable.env'
 
-require('module-alias/register')
-import Controller from './interfaces/controller.interface'
+// message constant
+import ConstantMessage from '@/constants/message.constant'
 
-// API constant import
-import ConstantAPI from './constants/ api.constant'
+// http constant
+import ConstantHttpCode from '@/constants/http.code.constant'
+import ConstantHttpReason from '@/constants/http.reason.constant'
+import ConstantAPI from '@/constants/ api.constant'
 
-// Message constant import
-import ConstantMessage from './constants/message.constant'
-
-// HTTP constant imports
-import ConstantHttpCode from './constants/http.code.constant'
-import ConstantHttpReason from './constants/http.reason.constant'
-
-
+// Database
+import connectDb from '@/config/db.config'
 
 class App {
   public app: Application
 
+  private DATABASE_URL: string
+
   constructor(controllers: Controller[]) {
     this.app = express()
 
+    this.DATABASE_URL = Variable.DATABASE_URL
+
     //  Initialise the application
+    this.initialiseDatabaseConnection(this.DATABASE_URL)
     this.initialiseConfig()
     this.initialiseRoutes()
     this.initialiseControllers(controllers)
@@ -41,17 +48,17 @@ class App {
   // Start the application
   private initialiseConfig(): void {
     this.app.use(express.json()) // Parse JSON bodies
-    this.app.use(express.urlencoded({ extended: true })) // Parse URL-encoded bodies
-    this.app.use(cookieParser()) // Parse cookie headers
-    this.app.use(compression()) // Compress response bodies
-    this.app.use(cors()) // Enable Cross-Origin Resource Sharing (CORS)
-    this.app.use(helmet()) // Apply various HTTP headers for security
+    this.app.use(express.urlencoded({ extended: true }))
+    this.app.use(cookieParser())
+    this.app.use(compression())
+    this.app.use(cors())
+    this.app.use(helmet())
   }
 
   // Initializes the application routes
   private initialiseRoutes(): void {
     this.app.get(
-      ConstantAPI.ROOT, // Root endpoint URL
+      ConstantAPI.ROOT,
       (_req: Request, res: Response, next: NextFunction) => {
         try {
           return res.status(ConstantHttpCode.OK).json({
@@ -77,13 +84,19 @@ class App {
   // Initializes the application controllers
   private initialiseControllers(controllers: Controller[]): void {
     controllers.forEach((controller: Controller) => {
-      this.app.use(ConstantAPI.API, controller.router) // Mount each controller's router under the API base path
+      this.app.use(ConstantAPI.API, controller.router)
     })
   }
 
   // Initializes the application error handling
   private initialiseErrorHandling(): void {
-    this.app.use(ErrorMiddleware) // Use the error handling middleware
+    this.app.use(ErrorMiddleware)
+  }
+
+  //  initialize database connection
+
+  private initialiseDatabaseConnection(url: string): void {
+    connectDb(url)
   }
 }
 
