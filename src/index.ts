@@ -19,7 +19,7 @@ import Variable from '@/env/variable.env'
 // message constant
 import ConstantMessage from '@/constants/message.constant'
 
-// http constant
+// htt
 import ConstantHttpCode from '@/constants/http.code.constant'
 import ConstantHttpReason from '@/constants/http.reason.constant'
 import ConstantAPI from '@/constants/ api.constant'
