@@ -6,7 +6,7 @@ import UserInterface from '@/interfaces/ user.interface'
 //  class UserRepository
 
 class UserRepository {
-  //  find al users
+  //  find all users
   public async findAll(): Promise<UserInterface[]> {
     const users = await User.find({}).select('-password')
     return users
