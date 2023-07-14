@@ -1,7 +1,7 @@
 import CryptoJS from 'crypto-js'
 import jwt from 'jsonwebtoken'
 
-import Variable from '@/env/variable.env'
+import Variable from   '.././env/variable.env'
 
 class UserSecurity {
   // encrypt password from database to compare with the password entered by the user
@@ -18,7 +18,7 @@ class UserSecurity {
 
   //  compare password entered by the user with the password in the database
 
-  public compare(password: string, passwordHash: string): boolean {
+  public comparePassword(password: string, passwordHash: string): boolean {
     return this.decrypt(passwordHash) === password
   }
 
@@ -31,4 +31,4 @@ class UserSecurity {
   }
 }
 
-export default new UserSecurity()
+export default  UserSecurity

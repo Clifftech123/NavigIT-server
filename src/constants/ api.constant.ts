@@ -4,5 +4,9 @@ class Api {
 
   //  Define a static property called API that is a string representing the path to the student API
   public static readonly API: string = '/student'
+
+  // auth
+  public static readonly AUTH_REGISTER: string = '/register'
+  public static readonly AUTH_LOGIN: string = '/login'
 }
 export default Api
