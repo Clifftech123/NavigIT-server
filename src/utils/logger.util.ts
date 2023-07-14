@@ -1,9 +1,9 @@
 import winston from 'winston'
-import Variable from '@/env/variable.env'
+import Variable from '../env/variable.env'
 
-import ConstantDateFormat from '@/constants/dateformat.constant'
+import ConstantDateFormat from '../constants/dateformat.constant'
 
-import ConstantPath from '@/constants/path.constant'
+import ConstantPath from '../constants/path.constant'
 
 // Define log levels and their corresponding numerical values
 const levels = {

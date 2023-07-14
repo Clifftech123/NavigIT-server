@@ -1,11 +1,11 @@
 import { Request, Response, NextFunction } from 'express'
 import HttpException from 'utils/exceptions/ http.exception'
 //  http constant
-import ConstantHttpCode from 'constants//http.code.constant'
-import ConstantHttpReason from 'constants//http.reason.constant'
+import ConstantHttpCode from '../constants/http.code.constant'
+import ConstantHttpReason from '../constants/http.reason.constant'
 
 // message constant
-import ConstantMessage from 'constants//message.constant'
+import ConstantMessage from '../constants/message.constant'
 // Error handling middleware function
 
 //   Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.

@@ -1,6 +1,6 @@
 import 'dotenv/config'
 
-import VariableValidate from '@/validations/ variable.validation'
+import VariableValidate from '../validations/ variable.validation'
 
 class Variable {
   public static readonly NODE_ENV: string =

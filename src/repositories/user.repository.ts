@@ -1,7 +1,7 @@
 //  This repository is used to interact with the database and perform CRUD operations on the User table.
 
-import User from '@/models/ user.model'
-import UserInterface from '@/interfaces/ user.interface'
+import User from '../models/ user.model'
+import UserInterface from '../interfaces/ user.interface'
 
 //  class UserRepository
 

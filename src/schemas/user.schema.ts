@@ -1,6 +1,6 @@
 import mangoose from 'mongoose'
 
-import constantNumber from '@/constants/number.constant'
+import constantNumber from '../constants/number.constant'
 
 const userSchema = new mangoose.Schema({
   username: {

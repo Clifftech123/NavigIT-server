@@ -9,13 +9,15 @@
     "license": "MIT"
   },
   "scripts": {
-    "start": "node build/bin/www.js",
+    "start": "node build/app.js",
     "clean": "rimraf build",
-    "build": "yarn clean && yarn build:compile",
-    "build:compile": "babel src --extensions .ts --out-dir build --source-maps",
-    "dev": "concurrently \"yarn dev:compile\" \"yarn dev:watch\"",
+    "prebuild": "rimraf build",
+    "build": "tsc",
+    "start:dev": "nodemon --exec ts-node src/app.ts",
+    "start:prod": "node build/app.js",
+
     "dev:compile": "babel src --extensions .ts --out-dir build --source-maps --watch",
-    "dev:watch": "nodemon --exec node build/bin/www.js",
+    "dev:watch": "nodemon --exec node build/app.js",
     "dev:types": "tsc --watch",
     "prettier": "prettier --write \"src/**/*.ts\"",
     "prettier:check": "prettier --check \"src/**/*.ts\"",
@@ -48,6 +50,7 @@
     "mongoose": "7.3.1",
     "nodemo": "1.0.0",
     "regenerator-runtime": "0.13.11",
+    "ts-node": "10.9.1",
     "winston": "3.9.0"
   },
   "devDependencies": {
@@ -82,22 +85,5 @@
     "eslint-plugin-promise": "6.1.1",
     "prettier": "2.8.8",
     "typescript": "5.1.6"
-  },
-  "_moduleAliases": {
-    "@/bin": "build/bin",
-    "@/config": "build/config",
-    "@/constants": "build/constants",
-    "@/controllers": "build/controllers",
-    "@/env": "build/env",
-    "@/interfaces": "build/interfaces",
-    "@/middlewares": "build/middlewares",
-    "@/models": "build/models",
-    "@/repositories": "build/repositories",
-    "@/routers": "build/routers",
-    "@/schemas": "build/schemas",
-    "@/security": "build/security",
-    "@/services": "build/services",
-    "@/utils": "build/utils",
-    "@/validations": "build/validations"
   }
 }

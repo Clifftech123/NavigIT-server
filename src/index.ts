@@ -5,27 +5,27 @@ import cors from 'cors'
 import helmet from 'helmet'
 
 // Middleware
-import ErrorMiddleware from '@/middlewares/error.middleware'
+import ErrorMiddleware from './middlewares/error.middleware'
 
 // Exception
-import HttpException from '@/utils/exceptions/ http.exception'
+import HttpException from './utils/exceptions/ http.exception'
 
 // Controller
-import Controller from '@/interfaces/controller.interface'
+import Controller from './interfaces/controller.interface'
 
 // variable
-import Variable from '@/env/variable.env'
+import Variable from './env/variable.env'
 
 // message constant
-import ConstantMessage from '@/constants/message.constant'
+import ConstantMessage from './constants/message.constant'
 
 // htt
-import ConstantHttpCode from '@/constants/http.code.constant'
-import ConstantHttpReason from '@/constants/http.reason.constant'
-import ConstantAPI from '@/constants/ api.constant'
+import ConstantHttpCode from './constants/http.code.constant'
+import ConstantHttpReason from './constants/http.reason.constant'
+import ConstantAPI from './constants/ api.constant'
 
 // Database
-import connectDb from '@/config/db.config'
+import connectDb from './config/db.config'
 
 class App {
   public app: Application

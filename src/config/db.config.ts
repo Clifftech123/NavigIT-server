@@ -1,5 +1,5 @@
 import { connect } from 'mongoose'
-import logger from '@/utils/logger.util'
+import logger from '../utils/logger.util'
 
 //  Connect to the database
 const connectDb = async (URL: string) => {

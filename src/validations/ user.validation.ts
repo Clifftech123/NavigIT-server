@@ -1,5 +1,5 @@
 import Joi from 'joi'
-import ConstantRegex from '@/constants/regex.constant'
+import ConstantRegex from '../constants/regex.constant'
 
 class UserValidation {
   // User validation
