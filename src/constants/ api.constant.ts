@@ -5,6 +5,9 @@ class Api {
   //  Define a static property called API that is a string representing the path to the student API
   public static readonly API: string = '/student'
 
+  public static readonly AUTH: string = `/auth`
+  public static readonly USERS: string = '/users'
+
   // auth
   public static readonly AUTH_REGISTER: string = '/register'
   public static readonly AUTH_LOGIN: string = '/login'
