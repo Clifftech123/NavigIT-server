@@ -3,7 +3,13 @@
 import User from '../models/ user.model'
 import UserInterface from '../interfaces/ user.interface'
 
-//  class UserRepository
+/**
+ *  Class UserRepository
+ * @class
+ *  @description  This class is used to interact with the database and perform CRUD operations on the User table.       
+ * @access public
+ * @constructs
+*/
 
 class UserRepository {
   //  find all users
@@ -180,7 +186,6 @@ class UserRepository {
   }
 
   // Delete user
-
   public async DeleteUser(id: string): Promise<UserInterface | null> {
     const user = await User.findByIdAndDelete(id)
 
