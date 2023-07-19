@@ -47,7 +47,7 @@
     "joi": "17.9.2",
     "jsonwebtoken": "9.0.1",
     "module-alias": "2.2.3",
-    "mongoose": "7.3.1",
+    "mongoose": "7.3.3",
     "nodemo": "1.0.0",
     "regenerator-runtime": "0.13.11",
     "ts-node": "10.9.1",
