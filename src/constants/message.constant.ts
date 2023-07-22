@@ -5,8 +5,7 @@ class message {
   //  Define a static property called API that is a string representing the path to the student API
   public static readonly SOMETHING_WENT_WRONG: string = 'Something went wrong'
 
-  
-  // aut hmessage 
+  // aut hmessage
   public static readonly USERNAME_NOT_VALID: string = 'username is not valid'
   public static readonly NAME_NOT_VALID: string = 'name is not valid'
   public static readonly EMAIL_NOT_VALID: string = 'email is not valid'
@@ -23,6 +22,12 @@ class message {
   public static readonly USER_NOT_FOUND: string = 'user is not found'
   public static readonly PASSWORD_NOT_MATCH: string = 'password is not match'
   public static readonly USER_LOGIN_SUCCESS: string = 'user is login success'
+
+  // token message
+  public static readonly TOKEN_NOT_VALID: string = 'Token not valid'
+  public static readonly NOT_AUTHENTICATED: string = 'Not authenticated'
+  public static readonly UNAUTHORIZED: string = 'Unauthorized'
+  public static readonly NOT_ALLOWED: string = 'Not allowed'
 }
 
 export default message

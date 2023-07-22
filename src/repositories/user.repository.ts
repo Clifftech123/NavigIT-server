@@ -98,7 +98,7 @@ class UserRepository {
   }
 
   //  update user username
-  public async UpdateUserName(
+  public async updateUserName(
     id: string,
     username: string,
   ): Promise<UserInterface | null> {
@@ -111,7 +111,7 @@ class UserRepository {
   }
 
   //  update user name
-  public async UpdateName(
+  public async updateName(
     id: string,
     name: string,
   ): Promise<UserInterface | null> {
@@ -125,7 +125,7 @@ class UserRepository {
 
   //  update user email
 
-  public async UpdateEmail(
+  public async updateEmail(
     id: string,
     email: string,
   ): Promise<UserInterface | null> {
@@ -140,7 +140,7 @@ class UserRepository {
 
   //  update user password
 
-  public async UpdatePassword(
+  public async updatePassword(
     id: string,
     password: string,
   ): Promise<UserInterface | null> {
@@ -155,7 +155,7 @@ class UserRepository {
 
   // update user phone
 
-  public async UpdatePhone(
+  public async updatePhone(
     id: string,
     phone: string,
   ): Promise<UserInterface | null> {
@@ -170,7 +170,7 @@ class UserRepository {
 
   // update user address
 
-  public async UpdateAddress(
+  public async updateAddress(
     id: string,
     address: string,
   ): Promise<UserInterface | null> {
