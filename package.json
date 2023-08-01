@@ -1,13 +1,9 @@
 {
   "name": "student-connect-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "The Student Connect API is a platform that allows students from different schools and universities to connect with each other and share knowledge. This API provides various features for students to create profiles, post questions, receive answers, and engage in discussions.",
   "main": "index.js",
-  "author": {
-    "name": "Isaiah Clifford OPoku",
-    "email": "opokuisaiahclifford@gmail.com",
-    "license": "MIT"
-  },
+  "author": "Isaiah Clifford OPoku <opokuisaiahclifford@gmail.com>",
   "scripts": {
     "start": "node build/app.js",
     "clean": "rimraf build",
@@ -15,7 +11,6 @@
     "build": "tsc",
     "start:dev": "nodemon --exec ts-node src/app.ts",
     "start:prod": "node build/app.js",
-
     "dev:compile": "babel src --extensions .ts --out-dir build --source-maps --watch",
     "dev:watch": "nodemon --exec node build/app.js",
     "dev:types": "tsc --watch",
@@ -49,6 +44,7 @@
     "module-alias": "2.2.3",
     "mongoose": "7.3.3",
     "nodemo": "1.0.0",
+    "nodemon": "3.0.1",
     "regenerator-runtime": "0.13.11",
     "ts-node": "10.9.1",
     "winston": "3.9.0"
@@ -85,5 +81,6 @@
     "eslint-plugin-promise": "6.1.1",
     "prettier": "2.8.8",
     "typescript": "5.1.6"
-  }
+  },
+  "license": "ISC"
 }

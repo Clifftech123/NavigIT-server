@@ -26,7 +26,7 @@ class HttpCode {
   public static readonly SWITCH_PROXY: number = 306 // Switch Proxy
   public static readonly TEMPORARY_REDIRECT: number = 307 // Temporary Redirect
 
-  // 4xx Client Error
+  // 4xx Client Error  the error is
   public static readonly BAD_REQUEST: number = 400 // Bad Request
   public static readonly UNAUTHORIZED: number = 401 // Unauthorized
   public static readonly PAYMENT_REQUIRED: number = 402 // Payment Required

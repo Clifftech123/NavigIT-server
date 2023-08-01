@@ -38,44 +38,6 @@ The following technologies are utilized in the development of the Student Connec
 
 The following endpoints are available in the Student Connect API:
 
-- `GET /api/users`: Retrieve all users.
-- `GET /api/users/:id`: Retrieve a specific user by ID.
-- `POST /api/users`: Create a new user.
-- `PUT /api/users/:id`: Update a specific user by ID.
-- `DELETE /api/users/:id`: Delete a specific user by ID.
-
-- `GET /api/posts`: Retrieve all posts.
-- `GET /api/posts/:id`: Retrieve a specific post by ID.
-- `POST /api/posts`: Create a new post.
-- `PUT /api/posts/:id`: Update a specific post by ID.
-- `DELETE /api/posts/:id`: Delete a specific post by ID.
-
-- `GET /api/comments`: Retrieve all comments.
-- `GET /api/comments/:id`: Retrieve a specific comment by ID.
-- `POST /api/comments`: Create a new comment.
-- `PUT /api/comments/:id`: Update a specific comment by ID.
-- `DELETE /api/comments/:id`: Delete a specific comment by ID.
-
-- `GET /api/questions`: Retrieve all questions.
-- `GET /api/questions/:id`: Retrieve a specific question by ID.
-- `POST /api/questions`: Create a new question.
-- `PUT /api/questions/:id`: Update a specific question by ID.
-- `DELETE /api/questions/:id`: Delete a specific question by ID.
-
-- `GET /api/answers`: Retrieve all answers.
-- `GET /api/answers/:id`: Retrieve a specific answer by ID.
-- `POST /api/answers`: Create a new answer.
-- `PUT /api/answers/:id`: Update a specific answer by ID.
-- `DELETE /api/answers/:id`: Delete a specific answer by ID.
-
-- `GET /api/likes`: Retrieve all likes.
-- `GET /api/likes/:id`: Retrieve a specific like by ID.
-- `POST /api/likes`: Create a new like.
-- `PUT /api/likes/:id`: Update a specific like by ID.
-- `DELETE /api/likes/:id`: Delete a specific like by ID.
-
-
-
 ## Conclusion
 The Student Connect API provides a powerful platform for students to connect, share knowledge, and engage in meaningful discussions. By leveraging the technologies mentioned above, this API aims to facilitate a collaborative learning environment among students from various educational backgrounds.
 
