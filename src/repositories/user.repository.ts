@@ -80,7 +80,6 @@ class UserRepository {
   }
 
   //  create user
-
   public async createUser(user: any): Promise<UserInterface | null> {
     const NewUser = new User({
       username: user.username,
