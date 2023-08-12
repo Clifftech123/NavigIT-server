@@ -1,5 +1,7 @@
 // Pos constant  model
 
-export class PostModel {
+export default class PostModel {
   public static readonly POST_MODEL: string = 'PostModel'
 }
+
+
