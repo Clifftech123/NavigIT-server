@@ -1,6 +1,5 @@
 import mongoose from 'mongoose'
 import constantNumber from '../constants/number.constant'
-import IPost from '../interfaces/post.interface'
 
 const PostSchema = new mongoose.Schema({
   title: {
@@ -40,4 +39,4 @@ PostSchema.virtual('user', {
   justOne: true,
 })
 
-export default mongoose.model<IPost>('Post', PostSchema)
+export default PostSchema;
