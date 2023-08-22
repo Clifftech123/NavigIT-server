@@ -1,7 +1,7 @@
 import CryptoJS from 'crypto-js'
 import jwt from 'jsonwebtoken'
 
-import Variable from   '.././env/variable.env'
+import Variable from '.././env/variable.env'
 
 class UserSecurity {
   // encrypt password from database to compare with the password entered by the user
@@ -31,4 +31,4 @@ class UserSecurity {
   }
 }
 
-export default  UserSecurity
+export default UserSecurity

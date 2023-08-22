@@ -1,10 +1,10 @@
-import jwt from "jsonwebtoken";
-import { Request, Response, NextFunction }from "express";
+import jwt from 'jsonwebtoken'
+import { Request, Response, NextFunction } from 'express'
 
-import HttpException from "utils/exceptions/ http.exception";
+import HttpException from 'utils/exceptions/ http.exception'
 
 // Import environment variables
-import Variable from "env/variable.env";
+import Variable from 'env/variable.env'
 
 // Import message constants
 import ConstantMessage from '../constants/message.constant'
@@ -14,7 +14,7 @@ import ConstantHttpCode from '../constants/http.code.constant'
 import ConstantHttpReason from '../constants/http.reason.constant'
 
 // Import logger utility
-import logger from "../utils/logger.util";
+import logger from '../utils/logger.util'
 
 // Verify token middleware function
 export const verifyToken = async (
@@ -72,4 +72,3 @@ export const verifyToken = async (
 
 // Export the middleware function
 export default { verifyToken }
-

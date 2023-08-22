@@ -1,7 +1,6 @@
 import Comment from '../models/comment.model'
 import CommentInterface from '../interfaces/comment.interface'
 
-
 // This class is used to interact with the database and perform CRUD operations on the Comment table.
 class CommentRepository {
   public async findAll(): Promise<CommentInterface[]> {
@@ -9,13 +8,11 @@ class CommentRepository {
     return comments
   }
 
-
   /// find comment by id
   public async findById(id: string): Promise<CommentInterface | null> {
     const comment = await Comment.findById(id).populate('author')
     return comment
   }
-
 
   // Create comment
   public async createComment(comment: any): Promise<CommentInterface | null> {
@@ -24,13 +21,11 @@ class CommentRepository {
       author: comment.author,
     })
 
-
     // save comment to database
     const savedComment = await newComment.save()
 
     return savedComment
   }
-
 
   // update comment by id
   public async updateComment(
@@ -43,7 +38,6 @@ class CommentRepository {
 
     return updatedComment
   }
-
 
   // delete comment by id
   public async deleteComment(id: string): Promise<CommentInterface | null> {

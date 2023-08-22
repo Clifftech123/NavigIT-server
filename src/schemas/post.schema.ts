@@ -39,4 +39,4 @@ PostSchema.virtual('user', {
   justOne: true,
 })
 
-export default PostSchema;
+export default PostSchema

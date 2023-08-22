@@ -1,8 +1,6 @@
 import UserRepository from '../repositories/user.repository'
 import UserSecurity from '../security/ user.security'
 
-
-
 // UserService class definition
 class UserService {
   private userRepository: UserRepository

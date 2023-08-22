@@ -1,7 +1,5 @@
-import UserRepository from "repositories/user.repository";
-import UserSecurity from "security/ user.security";
-
-
+import UserRepository from 'repositories/user.repository'
+import UserSecurity from 'security/ user.security'
 
 class AuthService {
   private userRepository: UserRepository
@@ -77,5 +75,4 @@ class AuthService {
   }
 }
 
-
-export default AuthService;
+export default AuthService

@@ -6,10 +6,10 @@ import UserInterface from '../interfaces/ user.interface'
 /**
  *  Class UserRepository
  * @class
- *  @description  This class is used to interact with the database and perform CRUD operations on the User table.       
+ *  @description  This class is used to interact with the database and perform CRUD operations on the User table.
  * @access public
  * @constructs
-*/
+ */
 
 class UserRepository {
   //  find all users

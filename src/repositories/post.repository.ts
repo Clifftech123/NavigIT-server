@@ -1,7 +1,6 @@
 import Post from '../models/post.model'
 import PostInterface from '../interfaces/post.interface'
 
-
 // This class is used to interact with the database and perform CRUD operations on the Post table.
 class PostRepository {
   public async findAll(): Promise<PostInterface[]> {
@@ -9,13 +8,11 @@ class PostRepository {
     return posts
   }
 
-
   // find post by id
   public async findById(id: string): Promise<PostInterface | null> {
     const post = await Post.findById(id).populate('author')
     return post
   }
-
 
   //  Create post
   public async createPost(post: any): Promise<PostInterface | null> {
@@ -31,7 +28,7 @@ class PostRepository {
     return savedPost
   }
 
-  // update post by id 
+  // update post by id
 
   public async updatePost(
     id: string,

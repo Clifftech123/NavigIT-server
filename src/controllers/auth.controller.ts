@@ -257,26 +257,22 @@ class AuthController implements Controller {
     }
   }
 
-
-
-
-/**
- *  login user
- * If user is is already exist in database
- * and password is correct
- * return user data
- * else return error message
- * 
- * 
- * 
- */
-   // Login function to authenticate user
+  /**
+   *  login user
+   * If user is is already exist in database
+   * and password is correct
+   * return user data
+   * else return error message
+   *
+   *
+   *
+   */
+  // Login function to authenticate user
   private login = async (
     req: Request,
     res: Response,
     next: NextFunction,
   ): Promise<Response | void> => {
-
     try {
       // Getting the password and email from request body
       const { email, password } = req.body

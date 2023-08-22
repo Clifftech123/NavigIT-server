@@ -1,1 +1,1 @@
-console.log("This is post costant")
+console.log('This is post costant')
