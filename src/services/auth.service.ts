@@ -2,11 +2,11 @@ import UserRepository from 'repositories/user.repository'
 import UserSecurity from 'security/ user.security'
 
 class AuthService {
-  private userRepository: UserRepository
+  private userRepository: typeof UserRepository
   private userSecurity: UserSecurity
 
   constructor() {
-    this.userRepository = new UserRepository()
+    this.userRepository = UserRepository
     this.userSecurity = new UserSecurity()
   }
 
@@ -41,38 +41,7 @@ class AuthService {
   public comparePassword(password: string, decryptedPassword: string): boolean {
     return this.userSecurity.comparePassword(password, decryptedPassword)
   }
-
-  // create user
-
-  public async createUser(user: any): Promise<any> {
-    const encryptedPassword = await this.userSecurity.encrypt(user.password)
-
-    const newUser = {
-      username: user.username,
-      name: user.name,
-      email: user.email,
-      password: encryptedPassword,
-      phone: user.phone,
-      address: user.address,
-      isAdmin: user.isAdmin,
-    }
-
-    // saving the user
-
-    const savedUser = await this.userRepository.createUser(newUser)
-
-    return savedUser
-  }
-
-  // generate token for user`
-
-  public async generateAccessToken(
-    id: string,
-    isAdmin: boolean,
-  ): Promise<string> {
-    const token = this.userSecurity.generateAccessToken(id, isAdmin)
-    return token
-  }
 }
 
-export default AuthService
+
+export default AuthService;

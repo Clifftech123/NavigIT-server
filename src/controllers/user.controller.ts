@@ -3,15 +3,18 @@ import { Router, Request, Response, NextFunction } from 'express'
 import Controller from '../interfaces/controller.interface'
 
 import UserService from '../services/user.service'
-import Validate from '../../validations/user.validation'
+
+// Validate  the user  data
+import Validate from '../validations/ user.validation'
 
 import Authenticated from '../middlewares/authenticated.middleware'
 import validationMiddleware from '../middlewares/validation.middleware'
 
-import HttpException from '../../utils/exceptions/http.exception'
+//  This is an exception that wil throw  that contain error messages  
+import HttpException from '../utils/exceptions/ http.exception'
 
-// api constant
-import ConstantAPI from '../constants/api.constant'
+// api constant  it contain  the rout for the api 
+import ConstantAPI from '../constants/ api.constant'
 
 // message constant
 import ConstantMessage from '../constants/message.constant'
@@ -23,6 +26,8 @@ import ConstantHttpReason from '../constants/http.reason.constant'
 // logger
 import logger from '../utils/logger.util'
 
+
+//  Initialization for for the controller 
 class UserController implements Controller {
   public path: string
   public router: Router
@@ -40,6 +45,8 @@ class UserController implements Controller {
     this.initialiseRoutes()
   }
 
+
+  // Intialzation of the routes
   private initialiseRoutes(): void {
     this.router.post(
       `${this.path}${ConstantAPI.USER_UPDATE_USERNAME}`,
@@ -937,4 +944,4 @@ class UserController implements Controller {
 }
 
 
-export user
+export  default UserController;

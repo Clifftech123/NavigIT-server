@@ -3,12 +3,12 @@ import UserSecurity from '../security/ user.security'
 
 // UserService class definition
 class UserService {
-  private userRepository: UserRepository
+  private userRepository: typeof UserRepository
   private userSecurity: UserSecurity
 
   // Constructor initializes UserRepository and UserSecurity instances
   constructor() {
-    this.userRepository = new UserRepository()
+    this.userRepository = UserRepository;
     this.userSecurity = new UserSecurity()
   }
 
@@ -92,7 +92,7 @@ class UserService {
 
   // Deletes a user by ID
   public async deleteUser(id: string): Promise<unknown> {
-    const user = await this.userRepository.DeleteUser(id)
+    const user = await this.userRepository.deleteUser(id)
     return user
   }
 

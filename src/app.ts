@@ -5,14 +5,14 @@ import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 
 import http from 'http'
-import App from '..'
+import App from './index'
 
-import Variable from '@/env/variable.env'
-import logger from '@/utils/logger.util'
+import Variable from './env/variable.env'
+import logger from './utils/logger.util'
 
 // controllers
-import AuthController from '@/controllers/auth.controller'
-import UserController from '@/controllers/user.controller'
+import AuthController from './controllers/auth.controller'
+import UserController from ".//controllers//user.controller"
 
 const { app } = new App([new AuthController(), new UserController()])
 

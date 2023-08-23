@@ -10,4 +10,6 @@ export default interface User extends Document {
   phone: string
   address: string
   isAdmin: boolean
+  createdAt: Date
+  updatedAt: Date
 }
