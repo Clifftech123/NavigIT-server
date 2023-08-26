@@ -8,7 +8,7 @@ class UserService {
 
   // Constructor initializes UserRepository and UserSecurity instances
   constructor() {
-    this.userRepository = UserRepository;
+    this.userRepository = UserRepository
     this.userSecurity = new UserSecurity()
   }
 

@@ -1,7 +1,6 @@
-
-import { Schema } from 'mongoose';
-import constantNumber from '../constants/number.constant';
-import UserInterface from '../interfaces/ user.interface';
+import { Schema } from 'mongoose'
+import constantNumber from '../constants/number.constant'
+import UserInterface from '../interfaces/ user.interface'
 
 const UserSchema = new Schema<UserInterface>({
   username: {
@@ -53,7 +52,6 @@ const UserSchema = new Schema<UserInterface>({
     type: Date,
     default: Date.now,
   },
-});
+})
 
-
-export default UserSchema;
+export default UserSchema

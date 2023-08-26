@@ -117,6 +117,8 @@ describe('AuthService', () => {
         password: 'password',
         phone: '1234567890',
         address: '123 Main St',
+
+     
       }
       await UserRepository.create(user)
 

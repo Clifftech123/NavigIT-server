@@ -12,7 +12,7 @@ import logger from './utils/logger.util'
 
 // controllers
 import AuthController from './controllers/auth.controller'
-import UserController from ".//controllers//user.controller"
+import UserController from './/controllers//user.controller'
 
 const { app } = new App([new AuthController(), new UserController()])
 
