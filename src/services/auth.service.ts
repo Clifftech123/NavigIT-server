@@ -1,7 +1,13 @@
-import UserRepository from 'repositories/user.repository'
-import UserSecurity from 'security/ user.security'
+import UserRepository from '../repositories/user.repository'
+import UserSecurity from '../security/ user.security'
 
 class AuthService {
+  createUser(newUserData: { username: any; name: any; email: any; password: any; phone: any; address: any }) {
+    throw new Error('Method not implemented.')
+  }
+  generateAccessToken(id: any, isAdmin: any) {
+    throw new Error('Method not implemented.')
+  }
   private userRepository: typeof UserRepository
   private userSecurity: UserSecurity
 

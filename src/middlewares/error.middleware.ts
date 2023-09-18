@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express'
-import HttpException from 'utils/exceptions/ http.exception'
+import HttpException from '../utils/exceptions// http.exception'
 //  http constant
 import ConstantHttpCode from '../constants/http.code.constant'
 import ConstantHttpReason from '../constants/http.reason.constant'

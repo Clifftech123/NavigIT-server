@@ -9,7 +9,7 @@ export default interface User extends Document {
   password: string
   phone: string
   address: string
-  isAdmin: boolean
+  isAdmin?: boolean
   createdAt: Date
   updatedAt: Date
 }

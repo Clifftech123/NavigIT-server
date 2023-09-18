@@ -15,10 +15,10 @@ class Variable {
   public static readonly PASS_SECRET: string = process.env.PASS_SECRET ?? ''
 
   constructor() {
-    this.initialise()
+    this.initialize()
   }
 
-  private initialise(): void {
+  private initialize(): void {
     VariableValidate()
   }
 }

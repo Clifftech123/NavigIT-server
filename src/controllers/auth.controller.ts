@@ -6,7 +6,7 @@ import AuthService from '../services/auth.service'
 import Controller from '../interfaces/controller.interface'
 
 // Import user validation
-import Validate from '..//validations// user.validation'
+import Validate from '../validations// user.validation'
 
 // Import validation middleware
 import validationMiddleware from '../middlewares/validation.middleware'
@@ -15,7 +15,7 @@ import validationMiddleware from '../middlewares/validation.middleware'
 import HttpException from '../utils//exceptions/ http.exception'
 
 // Import API constant
-import ConstantAPI from '..//constants/ api.constant'
+import ConstantAPI from '../constants/ api.constant'
 
 // Import message constant
 import ConstantMessage from '../constants/message.constant'
@@ -43,14 +43,14 @@ class AuthController implements Controller {
     this.router = Router()
     this.authService = new AuthService()
     this.validate = new Validate()
-    this.initialiseRoutes()
+    this.initializeRoutes()
   }
 
   /**
-   * Initialise routes
-   * This method is used to initialise all routes in this controller
+   * Initialize routes
+   * This method is used to Initialize all routes in this controller
    */
-  private initialiseRoutes(): void {
+  private initializeRoutes(): void {
     // Register route
     this.router.post(
       `${this.path}${ConstantAPI.AUTH_REGISTER}`,
@@ -218,7 +218,7 @@ class AuthController implements Controller {
 
       // Create new user and save in database
       const user = await this.authService.createUser(newUserData)
-      if (!user) {
+      if (user === undefined) {
         return next(
           new HttpException(
             ConstantHttpCode.CONFLICT,
@@ -229,7 +229,8 @@ class AuthController implements Controller {
       }
 
       // Log that user is created
-      const newUser = { ...user }._doc
+      const newUser = user as any;
+      // or const newUser = user ? user.toObject() : null;
       logger.info({ newUserpassword: newUser.password })
 
       // Delete password from new user data
@@ -341,9 +342,9 @@ class AuthController implements Controller {
       // If password is match log password is match
       // and generate access token
       // and return user data and access token
-      const accessToken = await this.authService.generateAccessToken(
+      const accessToken = this.authService.generateAccessToken(
         user.id,
-        user.isAdmin,
+        user.isAdmin
       )
       // Log access token
       logger.info(`accessToken: ${accessToken}`)

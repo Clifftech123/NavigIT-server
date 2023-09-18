@@ -1,43 +1,26 @@
 import jwt from 'jsonwebtoken'
 import { Request, Response, NextFunction } from 'express'
 
-import HttpException from 'utils/exceptions/ http.exception'
-
-// Import environment variables
-import Variable from 'env/variable.env'
-
-// Import message constants
+import HttpException from '../utils/exceptions/ http.exception'
+import User from '../interfaces/ user.interface'
+import Variable from '../env/variable.env'
 import ConstantMessage from '../constants/message.constant'
-
-// Import HTTP constants
-import ConstantHttpCode from '../constants/http.code.constant'
+import  ConstantHttpCode from '../constants/http.code.constant'
 import ConstantHttpReason from '../constants/http.reason.constant'
-
-// Import logger utility
 import logger from '../utils/logger.util'
 
-// Verify token middleware function
+interface AuthenticatedRequest extends Request {
+  user?: User
+}
+
 export const verifyToken = async (
-  req: Request,
+  req: AuthenticatedRequest,
   res: Response,
   next: NextFunction,
 ) => {
-  // Get the authorization header from the request
   const bearer = req.headers.authorization
   logger.info(`bearer: ${bearer}`)
 
-  // If there is no authorization header, return an error
-  if (!bearer) {
-    return next(
-      new HttpException(
-        ConstantHttpCode.UNAUTHORIZED,
-        ConstantHttpReason.UNAUTHORIZED,
-        ConstantMessage.TOKEN_NOT_VALID,
-      ),
-    )
-  }
-
-  // If the authorization header is not in the correct format, return an error
   if (!bearer || !bearer.startsWith('Bearer ')) {
     return next(
       new HttpException(
@@ -48,27 +31,31 @@ export const verifyToken = async (
     )
   }
 
-  // Extract the access token from the authorization header
-  const accessToken = bearer.split('Bearer ')[1].trim()
+  const accessToken = bearer.split('Bearer ')[1]?.trim()
 
-  // Verify the access token using the JWT_SECRET environment variable
-  return jwt.verify(accessToken, Variable.JWT_SECRET, (err, user: any) => {
-    // If there is an error verifying the token, return an error
-    if (err) {
-      res.status(ConstantHttpCode.FORBIDDEN).json({
-        status: {
-          code: ConstantHttpCode.FORBIDDEN,
-          msg: ConstantHttpReason.FORBIDDEN,
-        },
-        msg: ConstantMessage.TOKEN_NOT_VALID,
-      })
-    }
-    // Set the user property of the request object to the verified user
+  if (!accessToken) {
+    return next(
+      new HttpException(
+        ConstantHttpCode.UNAUTHORIZED,
+        ConstantHttpReason.UNAUTHORIZED,
+        ConstantMessage.TOKEN_NOT_VALID,
+      ),
+    )
+  }
+
+  try {
+    const user = jwt.verify(accessToken, Variable.JWT_SECRET) as User
     req.user = user
-    // Call the next middleware function
     return next()
-  })
+  } catch (error) {
+    return next(
+      new HttpException(
+        ConstantHttpCode.FORBIDDEN,
+        ConstantHttpReason.FORBIDDEN,
+        ConstantMessage.TOKEN_NOT_VALID,
+      ),
+    )
+  }
 }
 
-// Export the middleware function
 export default { verifyToken }
