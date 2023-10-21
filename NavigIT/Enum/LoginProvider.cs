@@ -1,8 +1,7 @@
-﻿namespace student_connect_server.Enum
+namespace NavigIT.Enum
 {
     public enum LoginProvider
     {
-       Google = 1,
-         Facebook,
+        
     }
 }
