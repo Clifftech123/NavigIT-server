@@ -6,5 +6,6 @@ namespace student_connect_server.DTOs
         [Required]
 
        public string TokenId { get; set; }
+        public object IdToken { get; internal set; }
     }
 }
