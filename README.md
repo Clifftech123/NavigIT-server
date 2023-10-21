@@ -64,4 +64,4 @@ We'd like to express our gratitude to the open-source community and the develope
 
 ## Contact
 
-Have questions or suggestions? Feel free to reach out to us at [your-email@example.com](mailto:your-email@example.com).
+Have questions or suggestions? Feel free to reach out to us at [Click Here](mailto:IGoogleAuthService).
