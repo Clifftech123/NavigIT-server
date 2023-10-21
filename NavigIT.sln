@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "student-connect-server", "student-connect-server\student-connect-server.csproj", "{AB045CA1-D2B6-4453-9E00-8A4D3397DD15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigIT", "NavigIT\NavigIT.csproj", "{7C63AF31-48C9-4C9E-8300-33D60A899B0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AB045CA1-D2B6-4453-9E00-8A4D3397DD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB045CA1-D2B6-4453-9E00-8A4D3397DD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB045CA1-D2B6-4453-9E00-8A4D3397DD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB045CA1-D2B6-4453-9E00-8A4D3397DD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C63AF31-48C9-4C9E-8300-33D60A899B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C63AF31-48C9-4C9E-8300-33D60A899B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C63AF31-48C9-4C9E-8300-33D60A899B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C63AF31-48C9-4C9E-8300-33D60A899B0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AA846B8A-6E06-452A-855C-11E75621CBC2}
+		SolutionGuid = {63FE90A2-E61E-4FE2-A939-C2E4D1178780}
 	EndGlobalSection
 EndGlobal
