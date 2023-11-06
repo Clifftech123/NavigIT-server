@@ -10,7 +10,7 @@ namespace NavigIT.Util
     public class BaseResponse<T>
     {
         // Default constructor
-        public BaseResponse()
+        public BaseResponse(string v, object value)
         {
         }
 

@@ -34,9 +34,15 @@ namespace NavigIT.GoogleAuthentication
                 _context = context;
                 _googleAuthConfig = googleAuthConfig.Value;
                 _logger = logger;
+              
          }
 
-         public async Task<BaseResponse<User>> GooleSignIn(GoogleSignInVM model)
+        public Task<BaseResponse<User>> GoogleSignIn(GoogleSignInVM model)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<BaseResponse<User>> GooleSignIn(GoogleSignInVM model)
          {
              try
              {
@@ -51,11 +57,13 @@ namespace NavigIT.GoogleAuthentication
                  {
                      user = new User()
                      {
-                         Email = payload.Email,
-                         UserName = payload.Email,
+                         Email s= payload.Email,
+                         UerName = payload.Email,
                          FirstName = payload.GivenName,
                          LastName = payload.FamilyName,
                          EmailConfirmed = true
+
+                         
                      };
 
                      var result = await _userManager.CreateAsync(user);
@@ -66,13 +74,18 @@ namespace NavigIT.GoogleAuthentication
                      }
                  }
 
+
                  return new BaseResponse<User>(user);
              }
              catch (Exception ex)
              {
                  _logger.LogError(ex, "An error occurred while signing in with Google");
                  return new BaseResponse<User>("An error occurred while signing in with Google");
+
+                
              }
+
+            
          }
 
         
