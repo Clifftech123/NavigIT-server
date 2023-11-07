@@ -7,6 +7,8 @@ namespace NavigIT.DTOs
 {
     public class JwtResponseVM
     {
+
+        public string Token { get; set; }
         
     }
 }
