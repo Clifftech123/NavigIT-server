@@ -9,6 +9,10 @@ namespace NavigIT.Util
     // A generic class that represents a response from a web API
     public class BaseResponse<T>
     {
+        public BaseResponse()
+        {
+            
+        }
         // Default constructor
         public BaseResponse(string v, object value)
         {

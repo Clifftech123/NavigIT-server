@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using log4net;
 using Microsoft.AspNetCore.Mvc;
 using NavigIT.Enum;
@@ -32,7 +28,7 @@ namespace NavigIT.Controllers
             _logger.Error(ex.Message, ex);
 
             BaseResponse<string> rsp = new BaseResponse<string>();
-            rsp.Status = RequestExecution.Error;
+            rsp.Status = RequestExecution.Errors;
 #if DEBUG
             rsp.Errors = new List<string>() { $"Error: {(ex?.InnerException?.Message ?? ex.Message)} --> {ex?.StackTrace}" };
             return BadRequest(rsp);

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Extensions;
 using NavigIT.Context;
 using NavigIT.DTOs;
@@ -10,7 +11,7 @@ using NavigIT.Enum;
 
 namespace NavigIT.Util
 {
-    public class CreateUserFromSocialLoginExtension
+    public static class CreateUserFromSocialLoginExtension
     {
 
         public static async Task<User> CreateUserFromSocialLogin(this UserManager<User> userManager,

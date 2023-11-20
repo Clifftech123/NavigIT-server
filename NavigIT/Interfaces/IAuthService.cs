@@ -10,7 +10,7 @@ namespace NavigIT.Interfaces
 {
     public interface IAuthService
     {
-         Task<BaseResponse<JwtResponseVM>> SignInWithGoogle(GoogleSignInVM model);
-      Task<BaseResponse<JwtResponseVM>> SignInWithFacebook(FacebookSignInVM model);
+        Task<BaseResponse<JwtResponseVM>> SignInWithGoogle(GoogleSignInVM model);
+        Task<BaseResponse<JwtResponseVM>> SignInWithFacebook(FacebookSignInVM model);
     }
 }

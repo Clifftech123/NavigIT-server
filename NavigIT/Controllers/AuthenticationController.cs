@@ -37,6 +37,7 @@ namespace NavigIT.Controllers
             try
             {
                 return ReturnResponse(await _authService.SignInWithGoogle(model));
+
             }
             catch (Exception ex)
             {

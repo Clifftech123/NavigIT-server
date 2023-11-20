@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Google.Apis.Auth;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using NavigIT.Context;
@@ -46,7 +43,7 @@ namespace NavigIT.GoogleAuthentication
          {
              try
              {
-                 var payload = await GoogleJsonWebSignature.ValidateAsync(model.IdToken, new GoogleJsonWebSignature.ValidationSettings()
+                 var payload = await GoogleJsonWebSignature.ValidateAsync(model.IdToken.ToString(), new GoogleJsonWebSignature.ValidationSettings()
                  {
                      Audience = new List<string>() { _googleAuthConfig.ClientId }
                  });
@@ -57,8 +54,8 @@ namespace NavigIT.GoogleAuthentication
                  {
                      user = new User()
                      {
-                         Email s= payload.Email,
-                         UerName = payload.Email,
+                         Email= payload.Email,
+                         UserName = payload.Email,
                          FirstName = payload.GivenName,
                          LastName = payload.FamilyName,
                          EmailConfirmed = true

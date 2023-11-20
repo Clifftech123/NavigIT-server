@@ -29,7 +29,7 @@ namespace NavigIT.Mapping
                 builder.ToTable(nameof(Role));
             }
         }
-    
+
 
 
         public class UserClaimMap : IEntityTypeConfiguration<UserClaim>
@@ -54,7 +54,7 @@ namespace NavigIT.Mapping
         }
 
 
-      
+
         public class UserLoginMap : IEntityTypeConfiguration<UserLogin>
         {
 
