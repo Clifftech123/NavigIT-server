@@ -1,0 +1,127 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "NavigIT.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/NavigIT.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NavigIT.Domain.dll": {}
+        }
+      },
+      "NavigIT.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "NavigIT.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NavigIT.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NavigIT.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NavigIT.Domain/1.0.0": {
+      "type": "project",
+      "path": "../NavigIT.Domain/NavigIT.Domain.csproj",
+      "msbuildProject": "../NavigIT.Domain/NavigIT.Domain.csproj"
+    },
+    "NavigIT.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../NavigIT.Infrastructure/NavigIT.Infrastructure.csproj",
+      "msbuildProject": "../NavigIT.Infrastructure/NavigIT.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "NavigIT.Domain >= 1.0.0",
+      "NavigIT.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\opoku\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Application\\NavigIT.Application.csproj",
+      "projectName": "NavigIT.Application",
+      "projectPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Application\\NavigIT.Application.csproj",
+      "packagesPath": "C:\\Users\\opoku\\.nuget\\packages\\",
+      "outputPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\opoku\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Domain\\NavigIT.Domain.csproj": {
+              "projectPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Domain\\NavigIT.Domain.csproj"
+            },
+            "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Infrastructure\\NavigIT.Infrastructure.csproj": {
+              "projectPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Infrastructure\\NavigIT.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
