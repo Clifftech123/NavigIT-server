@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigIT.Application", "NavigIT.Application\NavigIT.Application.csproj", "{83FE305B-EFCC-4B8B-8F77-E5F0D91FCF30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavigIT.Application", "NavigIT.Application\NavigIT.Application.csproj", "{83FE305B-EFCC-4B8B-8F77-E5F0D91FCF30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigIT.Domain", "NavigIT.Domain\NavigIT.Domain.csproj", "{441DF33A-0CD1-483E-A898-B0719BD87203}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavigIT.Domain", "NavigIT.Domain\NavigIT.Domain.csproj", "{441DF33A-0CD1-483E-A898-B0719BD87203}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigIT.Infrastructure", "NavigIT.Infrastructure\NavigIT.Infrastructure.csproj", "{488EA80C-9253-4282-9E51-F8A895EC2934}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavigIT.Infrastructure", "NavigIT.Infrastructure\NavigIT.Infrastructure.csproj", "{488EA80C-9253-4282-9E51-F8A895EC2934}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigIT.webAPI", "NavigIT.webAPI\NavigIT.webAPI.csproj", "{564A7929-F93B-49EA-8C3B-21283556E8C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavigIT.webAPI", "NavigIT.webAPI\NavigIT.webAPI.csproj", "{564A7929-F93B-49EA-8C3B-21283556E8C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigIT.Contracts", "NavigIT.Contracts\NavigIT.Contracts.csproj", "{A5DF19DE-F27F-4031-8625-C16E505A3D28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavigIT.Contracts", "NavigIT.Contracts\NavigIT.Contracts.csproj", "{A5DF19DE-F27F-4031-8625-C16E505A3D28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F3B045CE-4899-48A9-B1C8-61E505F40902}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +44,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{83FE305B-EFCC-4B8B-8F77-E5F0D91FCF30} = {F3B045CE-4899-48A9-B1C8-61E505F40902}
+		{441DF33A-0CD1-483E-A898-B0719BD87203} = {F3B045CE-4899-48A9-B1C8-61E505F40902}
+		{488EA80C-9253-4282-9E51-F8A895EC2934} = {F3B045CE-4899-48A9-B1C8-61E505F40902}
+		{564A7929-F93B-49EA-8C3B-21283556E8C7} = {F3B045CE-4899-48A9-B1C8-61E505F40902}
+		{A5DF19DE-F27F-4031-8625-C16E505A3D28} = {F3B045CE-4899-48A9-B1C8-61E505F40902}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BA6B002-08DF-4CA4-BD56-FA8B1AC2DD77}
