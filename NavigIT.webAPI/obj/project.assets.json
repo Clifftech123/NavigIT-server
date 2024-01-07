@@ -527,11 +527,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.webAPI\\NavigIT.webAPI.csproj",
+      "projectUniqueName": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.webAPI\\NavigIT.webAPI.csproj",
       "projectName": "NavigIT.webAPI",
-      "projectPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.webAPI\\NavigIT.webAPI.csproj",
+      "projectPath": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.webAPI\\NavigIT.webAPI.csproj",
       "packagesPath": "C:\\Users\\opoku\\.nuget\\packages\\",
-      "outputPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.webAPI\\obj\\",
+      "outputPath": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.webAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\opoku\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -548,8 +548,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Application\\NavigIT.Application.csproj": {
-              "projectPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Application\\NavigIT.Application.csproj"
+            "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Application\\NavigIT.Application.csproj": {
+              "projectPath": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Application\\NavigIT.Application.csproj"
             }
           }
         }

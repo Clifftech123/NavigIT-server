@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Contracts\\NavigIT.Contracts.csproj": {}
+    "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Contracts\\NavigIT.Contracts.csproj": {}
   },
   "projects": {
-    "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Contracts\\NavigIT.Contracts.csproj": {
+    "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Contracts\\NavigIT.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Contracts\\NavigIT.Contracts.csproj",
+        "projectUniqueName": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Contracts\\NavigIT.Contracts.csproj",
         "projectName": "NavigIT.Contracts",
-        "projectPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Contracts\\NavigIT.Contracts.csproj",
+        "projectPath": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Contracts\\NavigIT.Contracts.csproj",
         "packagesPath": "C:\\Users\\opoku\\.nuget\\packages\\",
-        "outputPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Contracts\\obj\\",
+        "outputPath": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\opoku\\AppData\\Roaming\\NuGet\\NuGet.Config",

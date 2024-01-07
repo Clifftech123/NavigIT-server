@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Infrastructure\\NavigIT.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Infrastructure\\NavigIT.Infrastructure.csproj",
       "projectName": "NavigIT.Infrastructure",
-      "projectPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Infrastructure\\NavigIT.Infrastructure.csproj",
+      "projectPath": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Infrastructure\\NavigIT.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\opoku\\.nuget\\packages\\",
-      "outputPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Infrastructure\\obj\\",
+      "outputPath": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\opoku\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Domain\\NavigIT.Domain.csproj": {
-              "projectPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Domain\\NavigIT.Domain.csproj"
+            "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Domain\\NavigIT.Domain.csproj": {
+              "projectPath": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Domain\\NavigIT.Domain.csproj"
             }
           }
         }

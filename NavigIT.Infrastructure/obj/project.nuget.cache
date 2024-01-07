@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ECY8kT1jms4djX3lxL24TET3IJEOgxtW2s9J7DHt9eb0uzRztMave9IK6+DJBNnhlZo+tqMuoYYiSgcP5mtqLw==",
+  "dgSpecHash": "Z5Zk6/BXWrHrG4/G6TR8fC7GAjIdbqOlrolQwFjAiFjXKGPr7sdA6LTmc6TMHUAOGiCNUG0XFe4T0wbfVmyznA==",
   "success": true,
-  "projectFilePath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Infrastructure\\NavigIT.Infrastructure.csproj",
+  "projectFilePath": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Infrastructure\\NavigIT.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\opoku\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
     "C:\\Users\\opoku\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",

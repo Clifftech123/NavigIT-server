@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Domain\\NavigIT.Domain.csproj",
+      "projectUniqueName": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Domain\\NavigIT.Domain.csproj",
       "projectName": "NavigIT.Domain",
-      "projectPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Domain\\NavigIT.Domain.csproj",
+      "projectPath": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Domain\\NavigIT.Domain.csproj",
       "packagesPath": "C:\\Users\\opoku\\.nuget\\packages\\",
-      "outputPath": "D:\\Backend\\Dotnet\\Code\\NavigIT-server\\NavigIT.Domain\\obj\\",
+      "outputPath": "D:\\Backend\\Dotnet\\NavigIT-server\\NavigIT.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\opoku\\AppData\\Roaming\\NuGet\\NuGet.Config",
