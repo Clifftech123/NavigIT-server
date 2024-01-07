@@ -15,4 +15,8 @@
     <ProjectReference Include="..\NavigIT.Application\NavigIT.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
